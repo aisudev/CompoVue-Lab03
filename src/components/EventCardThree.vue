@@ -1,13 +1,13 @@
 <template>
   <div class="event-card">
-    <span>@{{ event.time }} on {{ event.date }}</span>
-    <h4>{{ event.title }}</h4>
+    <h4>{{ event.category }}</h4>
+    <h4>{{ event.organizer }}</h4>
   </div>
 </template>
 
 <script>
 export default {
-  name: "EventCard",
+  name: "EventCardThree",
   props: {
     event: {
       type: Object,
@@ -24,6 +24,7 @@ export default {
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;
+  text-align: right;
 }
 
 .event-card:hover {

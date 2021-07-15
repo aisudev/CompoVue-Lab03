@@ -1,5 +1,5 @@
 module.exports = {
   signleQoute: true,
-  semi: false,
+  semi: true,
   trailingComma: "none"
 }
